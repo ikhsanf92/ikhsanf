@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 4, 2024 9:01:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.StokSepeda" table="stok_sepeda" catalog="db_pedalpal" optimistic-lock="version">
+        <id name="idSpd" type="string">
+            <column name="id_spd" length="11" />
+            <generator class="assigned" />
+        </id>
+        <property name="namaSepeda" type="string">
+            <column name="nama_sepeda" length="50" not-null="true" />
+        </property>
+        <property name="modelSepeda" type="string">
+            <column name="model_sepeda" length="20" not-null="true" />
+        </property>
+        <property name="statusSepeda" type="string">
+            <column name="status_sepeda" length="20" not-null="true" />
+        </property>
+        <property name="jumlahSepeda" type="int">
+            <column name="jumlah_sepeda" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
